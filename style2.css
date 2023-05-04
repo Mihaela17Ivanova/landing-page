@@ -1,0 +1,516 @@
+:root{
+    --main-bg: rgba(253,164,3,255);
+    --second-bg: rgba(138,18,83,255);
+}
+*{
+    box-sizing: border-box;
+}
+.hidden{
+    display: none;
+}
+
+/*PRICES*/
+
+.prices{
+    margin-top: 5rem;
+}
+.prices-title{
+    text-align: center;
+}
+
+.prices-table{
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.prices-box{
+    width: 100%;
+    height: 350px;
+    padding: 0.5rem; 
+}
+
+.p-header{
+    width: 100%;
+    height: 20%;
+    background-color: var(--main-bg);
+}
+
+.p-main{
+    width: 100%;
+    height: 80%;
+    background-color: rgba(232,117,26,255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-main ul li {
+    list-style-type: none;
+}
+
+.bay{
+    display: flex;
+    justify-content: center;
+}
+
+.bay-btn{
+    width: 40%;
+    background-color: var(--main-bg);
+    color: white;
+    border-radius: 20px;
+    padding: 2px 6px;
+    border: none;
+    margin-bottom: 0.5rem;
+}
+
+@media(max-width: 576px){
+    .prices-title {
+        width: 90%;
+        margin:0 auto
+    }
+    .prices-title p{
+    text-align: start;
+    padding-right: 1rem;
+    }
+
+    .prices-title h5{
+        font-size: 1.5rem;
+    }
+
+    .prices-table{
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .prices-box{
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .bay-btn{
+        width: 25%;
+        margin-top: 1.5rem;
+    }
+}
+/*PRICES END*/
+
+/*DO MORE*/
+.do-more{
+    width: 70%;
+    margin: 0 auto;
+    height: 400px;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 6rem;
+    gap: 1rem
+}
+
+.grid-container div:nth-child(1){
+    grid-column: 1/3;
+    grid-row: 2/5;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.grid-container div:nth-child(2){
+    grid-column: 3/4;
+    grid-row: 1/5;
+    background-image: url('/files/bottom1.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+.grid-container div:nth-child(3){
+    grid-column: 4/5;
+    grid-row: 2/4;
+    background-image: url('/files/bottom2.jpg');
+    background-position: center center;
+    background-size: cover;
+}
+
+@media(max-width: 576px){
+    .do-more{
+        width: 90%;
+        margin-top: 2rem;
+    }
+    
+    .grid-container{
+       margin-bottom: 2rem;
+      
+    }
+
+    .grid-box h4{
+        border-left: 8px solid var(--main-bg);
+        font-size: 2.5rem;
+    }
+
+    .grid-box h4 span{
+        display: none;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 2rem;
+    }
+
+    .grid-container div:nth-child(1){
+        grid-column: 1/5;
+        grid-row: 1/7;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .grid-container div:nth-child(2){
+        grid-column: 1/3;
+        grid-row: 8/14;
+    }
+
+    .grid-container div:nth-child(3){
+        grid-column: 3/5;
+        grid-row: 10/12;
+    }
+}
+/*DO MORE END*/
+
+/*CHOOSE US*/
+.choose-us{
+    height: 25rem;
+    background-color: var(--main-bg);
+    color: white;
+}
+
+.choose-us span{
+    color: white;
+}
+
+.location{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choose-btn{
+    background-color: white;
+    color: black;
+    padding: 3px 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+.location-box i {
+    font-size: 1.5rem;
+}
+
+@media(max-width: 576px){
+    .choose-us{
+        margin-top: 20rem;
+        height: 42rem;
+    }
+
+    .choose-us h5{
+        text-align: start;
+    }
+ 
+    .location {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-box{
+        width: 30%;
+        margin-bottom: 2.5rem;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+    } 
+}  
+/*CHOOSE US END*/
+
+/*CUSTOMER REVIEWS*/
+.comment{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orange-bgr{
+    width: 40px;
+    height: 150px;
+    background-color: var(--main-bg);position: relative;
+}
+
+.circle-icons{
+    display: flex;
+    align-items: center;
+}
+
+.circle-icons i{
+    color: var(--main-bg);
+    ;
+}
+
+.opinions p{
+    width: 90%;
+}
+
+.customer{
+    width: 20%;
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer img{
+    position: absolute;
+    left: 15px;
+    top:10px
+}
+
+.hidden{
+    display: none;
+}
+
+.hide{
+    display: inline-block;
+}
+
+@media(max-width: 576px){
+    .reviews h4{
+        width: 70%;
+        margin: 0 auto;
+        border-left: 8px solid var(--main-bg);
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .reviews h4 span{
+        display: none;
+    }
+
+    .comment{
+        width: 80%;
+        height: 450px;
+        flex-direction: column;
+    }
+
+    .hidden{
+        display: inline-block;
+    }
+
+    .customer{
+        padding-top: 2rem;
+    }
+
+    .opinions{
+        width: 80%;
+    }
+
+    #hide{
+        display: none;
+    }
+
+    .circle-icons{
+        margin-right: 5px;
+        font-size: 25px;
+    }
+   
+}
+/*CUSTOMER REVIEWS END*/
+
+/*CONTACT US*/
+.contact-us{
+    height: 55rem;
+    background-color: var(--main-bg);
+}
+
+.contact{
+    display: flex;
+}
+
+input{
+    width: 30rem;
+    height: 2rem; 
+    padding-left: 10px;
+}
+
+#msg{
+    height: 4rem;
+}
+
+.send{
+    text-align: right;
+}
+
+.send-btn{
+    background-color: var(--second-bg);
+    color: white;
+    padding: 3px 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+.info div{
+    width: 15%;
+    color: white;
+}
+
+.info{
+    width: 60%;
+    margin-left: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+}
+
+.connections ul li{
+    list-style-type: none;
+}
+
+#mail{
+    width: 10rem;
+}
+
+#news-btn{
+    background-color: var(--second-bg);
+    color: white;
+    border: none;
+    padding: 3px 10px;
+}
+
+.social-media{
+    width: 60%;
+    letter-spacing: 1rem;
+    text-align: right;
+    margin-left: 8rem;
+}
+
+.social-media i{
+    color: white;
+    font-size: 1rem;
+}
+
+.footer{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.inside{
+    width: 60%;
+    border-top: 1px solid white;
+    margin-right: 10rem;
+}
+
+@media(max-width: 576px){
+    .contact-us{
+        height: 200rem;
+        
+    }
+
+    #contact{
+        font-size: 2rem;
+    }
+
+    .contact{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center ;
+    }
+
+    input{
+        width: 29rem;
+        height: 2rem; 
+        padding-left: 10px;
+    }
+
+    #msg{
+        height: 6rem;
+    }
+
+    .form{
+        margin-bottom: 2rem;
+    }
+
+    .contact-us{
+        height: 100rem;  
+    }
+
+    .info{
+        width: 90%;
+        height: 600px;
+        margin:  0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.8rem;
+    }
+
+    .info div{
+        width: 100%;
+        color: white;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .about-us {
+        text-align: center; 
+    }
+
+    .about-us p{
+        margin-bottom: 1rem;
+    }
+
+    #mail{
+        width: 100%; 
+    }
+
+    #news-btn{
+        width: 30%;
+    }
+
+    .social-media{
+        width: 45%;
+        margin: 0 auto;
+        letter-spacing: 1rem;
+        text-align: center;
+    }
+
+    .footer{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        background-color: var(--main-bg);
+    }
+    
+    .inside{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+/*CONTACT US END*/
